@@ -62,13 +62,13 @@ const ICONS = {
 };
 
 const STATUS_COLORS = {
-  'Assigned': '#8b93a7', 'In Progress': '#2f9bff', 'Client Review': '#f5a524', 'Revision': '#f0566a',
-  'Approved': '#14b88a', 'Delivered': '#7c5cff',
-  'Pending': '#f5a524', 'Under Review': '#2f9bff', 'Converted': '#14b88a', 'Rejected': '#f0566a',
-  'Pending Review': '#f5a524', 'Revision Requested': '#f0566a', 'Open': '#f0566a', 'Addressed': '#14b88a',
+  'Assigned': '#7d8a90', 'In Progress': '#1f7fa8', 'Client Review': '#e0a020', 'Revision': '#e0484e',
+  'Approved': '#14a37a', 'Delivered': '#6f9fb3',
+  'Pending': '#e0a020', 'Under Review': '#1f7fa8', 'Converted': '#14a37a', 'Rejected': '#e0484e',
+  'Pending Review': '#e0a020', 'Revision Requested': '#e0484e', 'Open': '#e0484e', 'Addressed': '#14a37a',
 };
-const PRIORITY_COLORS = { Low: '#8b93a7', Medium: '#2f9bff', High: '#f5a524', Urgent: '#f0566a' };
-const AVATAR_COLORS = ['#7c5cff', '#2f9bff', '#14b88a', '#f5a524', '#f0566a', '#e05bd8', '#00a6b8', '#ff8a3d'];
+const PRIORITY_COLORS = { Low: '#7d8a90', Medium: '#6f9fb3', High: '#1f7fa8', Urgent: '#e0484e' };
+const AVATAR_COLORS = ['#00638e', '#004a6b', '#2b2b2b', '#1f7fa8', '#6f9fb3', '#4f7d92', '#14a37a', '#7d8a90'];
 
 const UI = {
   icon(name, size = 18, cls = '') {
@@ -107,7 +107,7 @@ const UI = {
     return `<span class="avatar" style="--s:${size}px;background:${this.colorFor(user.id)}" title="${this.esc(user.name)}">${this.initials(user.name)}</span>`;
   },
   badge(status) {
-    const c = STATUS_COLORS[status] || '#8b93a7';
+    const c = STATUS_COLORS[status] || '#7d8a90';
     return `<span class="badge" style="--c:${c}"><i></i>${this.esc(status)}</span>`;
   },
   priority(p) {
