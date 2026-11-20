@@ -2,51 +2,60 @@
    FlowDesk — Styles
    ========================================================= */
 
+/* Palette — Branding Orange #E85002 · Primary #000000 · Dark Gray #333333
+   Gray #646464 · Light Gray #A7A7A7 · White #F9F9F9
+   Branding gradient: #D9C3AB → #F16001 → #C10801 → #000000 */
 :root {
-  --bg: #f4f5fb;
+  --bg: #f9f9f9;
   --surface: #ffffff;
-  --surface-2: #f8f9fd;
-  --surface-3: #eef0f8;
-  --border: #e5e7f0;
-  --text: #171a2f;
-  --text-2: #3d4363;
-  --muted: #6c7392;
-  --track: #eceef6;
-  --primary: #6c4dff;
-  --primary-2: #2f9bff;
-  --primary-soft: #efebff;
-  --green: #14b88a;
-  --amber: #f0a020;
-  --red: #ec4d63;
-  --blue: #2f9bff;
-  --violet: #7c5cff;
-  --pink: #e05bd8;
-  --teal: #00a6b8;
-  --shadow-sm: 0 1px 2px rgba(23, 26, 47, .06);
-  --shadow: 0 1px 2px rgba(23, 26, 47, .04), 0 6px 24px rgba(23, 26, 47, .06);
-  --shadow-lg: 0 24px 64px rgba(23, 26, 47, .18);
+  --surface-2: #f4f4f4;
+  --surface-3: #ececec;
+  --border: #e2e2e2;
+  --text: #000000;
+  --text-2: #333333;
+  --muted: #646464;
+  --track: #ececec;
+  --primary: #e85002;
+  --primary-2: #c10801;
+  --primary-soft: #fdebe0;
+  --primary-rgb: 232, 80, 2;
+  --green: #14a37a;
+  --amber: #e89a0c;
+  --red: #d92d2d;
+  --blue: #e85002;
+  --violet: #9c7653;
+  --pink: #f16001;
+  --teal: #646464;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, .06);
+  --shadow: 0 1px 2px rgba(0, 0, 0, .04), 0 6px 24px rgba(0, 0, 0, .06);
+  --shadow-lg: 0 24px 64px rgba(0, 0, 0, .2);
   --radius: 14px;
   --radius-sm: 10px;
   --sidebar: 252px;
-  --grad: linear-gradient(135deg, #7c5cff 0%, #2f9bff 100%);
+  --grad: linear-gradient(135deg, #f16001 0%, #e85002 45%, #c10801 100%);
+  --grad-hero: linear-gradient(120deg, #d9c3ab -15%, #f16001 22%, #c10801 62%, #000000 100%);
   color-scheme: light;
 }
 
 [data-theme="dark"] {
-  --bg: #0d0f1c;
-  --surface: #161a2d;
-  --surface-2: #1b1f35;
-  --surface-3: #232843;
-  --border: #282d48;
-  --text: #eceefb;
-  --text-2: #c3c7e2;
-  --muted: #9097b8;
-  --track: #252a45;
-  --primary: #8b70ff;
-  --primary-soft: #2a2550;
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, .3);
-  --shadow: 0 1px 2px rgba(0, 0, 0, .25), 0 8px 28px rgba(0, 0, 0, .25);
-  --shadow-lg: 0 24px 64px rgba(0, 0, 0, .55);
+  --bg: #000000;
+  --surface: #141414;
+  --surface-2: #1b1b1b;
+  --surface-3: #262626;
+  --border: #333333;
+  --text: #f9f9f9;
+  --text-2: #d4d4d4;
+  --muted: #a7a7a7;
+  --track: #2a2a2a;
+  --primary: #f16001;
+  --primary-soft: #3a1a08;
+  --primary-rgb: 241, 96, 1;
+  --red: #f0443f;
+  --violet: #d9c3ab;
+  --teal: #a7a7a7;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, .5);
+  --shadow: 0 1px 2px rgba(0, 0, 0, .4), 0 8px 28px rgba(0, 0, 0, .45);
+  --shadow-lg: 0 24px 64px rgba(0, 0, 0, .7);
   color-scheme: dark;
 }
 
@@ -87,8 +96,8 @@ kbd { background: var(--surface-3); border: 1px solid var(--border); border-bott
   transition: transform .12s, box-shadow .2s, background .2s, border-color .2s; text-decoration: none !important;
 }
 .btn:active { transform: translateY(1px); }
-.btn-primary { background: var(--grad); color: #fff; box-shadow: 0 4px 14px rgba(108, 77, 255, .3); }
-.btn-primary:hover { box-shadow: 0 6px 20px rgba(108, 77, 255, .42); }
+.btn-primary { background: var(--grad); color: #fff; box-shadow: 0 4px 14px rgba(var(--primary-rgb), .3); }
+.btn-primary:hover { box-shadow: 0 6px 20px rgba(var(--primary-rgb), .42); }
 .btn-success { background: var(--green); color: #fff; box-shadow: 0 4px 14px rgba(20, 184, 138, .3); }
 .btn-success:hover { filter: brightness(1.05); }
 .btn-danger { background: var(--red); color: #fff; }
@@ -96,7 +105,7 @@ kbd { background: var(--surface-3); border: 1px solid var(--border); border-bott
 .btn-danger-ghost:hover { background: color-mix(in srgb, var(--red) 10%, transparent); }
 .btn-ghost { background: var(--surface); color: var(--text); border-color: var(--border); }
 .btn-ghost:hover { border-color: var(--primary); color: var(--primary); }
-.btn-light { background: #fff; color: #3a2bb0; box-shadow: 0 6px 20px rgba(0, 0, 0, .15); }
+.btn-light { background: #fff; color: #c10801; box-shadow: 0 6px 20px rgba(0, 0, 0, .15); }
 .btn-sm { height: 32px; padding: 0 12px; font-size: 13px; border-radius: 8px; }
 .btn-block { width: 100%; height: 44px; }
 .icon-btn {
@@ -439,7 +448,7 @@ input[type=range] { padding: 0; height: 24px; accent-color: var(--primary); bord
 /* ---------- Modal ---------- */
 #modal-root { position: fixed; inset: 0; z-index: 100; display: none; place-items: center; padding: 16px; }
 #modal-root.open { display: grid; }
-.modal-backdrop { position: absolute; inset: 0; background: rgba(10, 12, 28, .55); backdrop-filter: blur(4px); animation: fadeIn .2s; }
+.modal-backdrop { position: absolute; inset: 0; background: rgba(0, 0, 0, .55); backdrop-filter: blur(4px); animation: fadeIn .2s; }
 .modal { position: relative; width: 100%; max-width: 520px; max-height: calc(100vh - 32px); display: flex; flex-direction: column; background: var(--surface); border-radius: 18px; box-shadow: var(--shadow-lg); animation: pop .25s cubic-bezier(.2, .9, .3, 1.2); border: 1px solid var(--border); }
 .modal form { display: flex; flex-direction: column; min-height: 0; max-height: inherit; }
 .modal.sm { max-width: 440px; }
@@ -509,7 +518,7 @@ input[type=range] { padding: 0; height: 24px; accent-color: var(--primary); bord
 .fb-card p { font-style: italic; }
 
 /* ---------- Client portal ---------- */
-.welcome { display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; padding: 30px; border-radius: 20px; background: var(--grad); color: #fff; margin-bottom: 20px; position: relative; overflow: hidden; box-shadow: 0 14px 40px rgba(108, 77, 255, .3); }
+.welcome { display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; padding: 30px; border-radius: 20px; background: var(--grad-hero); color: #fff; margin-bottom: 20px; position: relative; overflow: hidden; box-shadow: 0 14px 40px rgba(var(--primary-rgb), .3); }
 .welcome::after { content: ''; position: absolute; right: -60px; top: -80px; width: 280px; height: 280px; border-radius: 50%; background: rgba(255, 255, 255, .1); }
 .welcome::before { content: ''; position: absolute; right: 140px; bottom: -120px; width: 220px; height: 220px; border-radius: 50%; background: rgba(255, 255, 255, .07); }
 .welcome h1 { font-size: 28px; font-weight: 800; margin: 8px 0 6px; }
@@ -570,7 +579,7 @@ input[type=range] { padding: 0; height: 24px; accent-color: var(--primary); bord
 .version { display: flex; gap: 16px; position: relative; padding-bottom: 18px; }
 .version:not(:last-child)::before { content: ''; position: absolute; left: 21px; top: 44px; bottom: 0; width: 2px; background: var(--border); }
 .v-chip { width: 44px; height: 44px; border-radius: 12px; background: var(--surface-3); display: grid; place-items: center; font-weight: 800; color: var(--text-2); flex-shrink: 0; }
-.version.pending .v-chip { background: var(--grad); color: #fff; box-shadow: 0 6px 16px rgba(108, 77, 255, .35); }
+.version.pending .v-chip { background: var(--grad); color: #fff; box-shadow: 0 6px 16px rgba(var(--primary-rgb), .35); }
 .v-body { flex: 1; min-width: 0; padding: 12px 14px; border: 1px solid var(--border); border-radius: 12px; background: var(--surface-2); }
 .version.pending .v-body { border-color: color-mix(in srgb, var(--amber) 50%, var(--border)); background: color-mix(in srgb, var(--amber) 5%, var(--surface)); }
 .v-head { display: flex; justify-content: space-between; gap: 10px; align-items: center; flex-wrap: wrap; }
@@ -750,7 +759,7 @@ input[type=range] { padding: 0; height: 24px; accent-color: var(--primary); bord
 @media (max-width: 1024px) {
   .sidebar { transform: translateX(-100%); box-shadow: var(--shadow-lg); }
   body.nav-open .sidebar { transform: none; }
-  body.nav-open .nav-scrim { display: block; position: fixed; inset: 0; background: rgba(10, 12, 28, .45); z-index: 35; }
+  body.nav-open .nav-scrim { display: block; position: fixed; inset: 0; background: rgba(0, 0, 0, .45); z-index: 35; }
   .main-col { margin-left: 0; }
   .only-mobile { display: inline-grid; }
   .kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); }

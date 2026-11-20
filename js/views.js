@@ -143,9 +143,9 @@ Views.landing = function () {
     <section class="land-section" id="roles">
       <h2>Three roles, one source of truth</h2>
       <div class="roles">
-        <div class="role"><div class="role-ic" style="--c:#7c5cff">${ic('briefcase', 22)}</div><h4>Agency Manager</h4><ul><li>Review & convert service requests</li><li>Assign staff, set deadlines & priorities</li><li>Manage clients and service catalog</li><li>Monitor performance & export reports</li></ul></div>
-        <div class="role"><div class="role-ic" style="--c:#2f9bff">${ic('pen', 22)}</div><h4>Agency Staff</h4><ul><li>See a prioritized work queue</li><li>Update progress on assigned projects</li><li>Upload versioned deliverables</li><li>Respond to revision requests</li></ul></div>
-        <div class="role"><div class="role-ic" style="--c:#14b88a">${ic('users', 22)}</div><h4>Client</h4><ul><li>Submit new service requests</li><li>Track project progress live</li><li>Approve or request revisions</li><li>Rate the completed service</li></ul></div>
+        <div class="role"><div class="role-ic" style="--c:#e85002">${ic('briefcase', 22)}</div><h4>Agency Manager</h4><ul><li>Review & convert service requests</li><li>Assign staff, set deadlines & priorities</li><li>Manage clients and service catalog</li><li>Monitor performance & export reports</li></ul></div>
+        <div class="role"><div class="role-ic" style="--c:#9c7653">${ic('pen', 22)}</div><h4>Agency Staff</h4><ul><li>See a prioritized work queue</li><li>Update progress on assigned projects</li><li>Upload versioned deliverables</li><li>Respond to revision requests</li></ul></div>
+        <div class="role"><div class="role-ic" style="--c:#646464">${ic('users', 22)}</div><h4>Client</h4><ul><li>Submit new service requests</li><li>Track project progress live</li><li>Approve or request revisions</li><li>Rate the completed service</li></ul></div>
       </div>
     </section>
 
@@ -153,7 +153,7 @@ Views.landing = function () {
   </div>`;
 };
 
-Views.logo = () => `<svg class="logo" viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><defs><linearGradient id="lgo" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8b6cff"/><stop offset="1" stop-color="#2f9bff"/></linearGradient></defs><rect width="32" height="32" rx="9" fill="url(#lgo)"/><path d="M9 10h14M9 16h10M9 22h6" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/><circle cx="22" cy="22" r="3" fill="#fff"/></svg>`;
+Views.logo = () => `<svg class="logo" viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><defs><linearGradient id="lgo" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f16001"/><stop offset="1" stop-color="#c10801"/></linearGradient></defs><rect width="32" height="32" rx="9" fill="url(#lgo)"/><path d="M9 10h14M9 16h10M9 22h6" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/><circle cx="22" cy="22" r="3" fill="#fff"/></svg>`;
 
 /* =========================================================
    ADMIN DASHBOARD

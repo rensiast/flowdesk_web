@@ -32,11 +32,11 @@ function seed() {
 
   /* Services */
   const svc = (id, name, description, baseDays, icon, color) => db.services.push({ id, name, description, baseDays, icon, color, active: true });
-  svc('s_gd', 'Graphic Design', 'Logos, brand identity, print collateral, packaging and layouts.', 10, 'pen', '#7c5cff');
-  svc('s_web', 'Web Development', 'Websites, landing pages and web apps built responsive-first.', 25, 'code', '#2f9bff');
-  svc('s_vid', 'Video Editing', 'Promotional videos, reels, testimonials and motion graphics.', 12, 'film', '#ff6b6b');
-  svc('s_pres', 'Presentation Design', 'Pitch decks, reports and keynote presentations.', 6, 'present', '#ffb020');
-  svc('s_soc', 'Social Media Content', 'Campaign visuals, captions and monthly content calendars.', 8, 'share', '#14b88a');
+  svc('s_gd', 'Graphic Design', 'Logos, brand identity, print collateral, packaging and layouts.', 10, 'pen', '#e85002');
+  svc('s_web', 'Web Development', 'Websites, landing pages and web apps built responsive-first.', 25, 'code', '#646464');
+  svc('s_vid', 'Video Editing', 'Promotional videos, reels, testimonials and motion graphics.', 12, 'film', '#c10801');
+  svc('s_pres', 'Presentation Design', 'Pitch decks, reports and keynote presentations.', 6, 'present', '#e89a0c');
+  svc('s_soc', 'Social Media Content', 'Campaign visuals, captions and monthly content calendars.', 8, 'share', '#9c7653');
 
   /* Agency users */
   const user = (id, name, email, role, title, extra = {}) => db.users.push(Object.assign({ id, name, email, password: 'demo123', role, title, createdAt: daysFromNow(-200) }, extra));
