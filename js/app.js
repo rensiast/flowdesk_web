@@ -470,7 +470,7 @@ const Act = {
   },
 
   serviceForm(id) {
-    const s = id ? Store.service(id) : { color: '#7c5cff', icon: 'pen', baseDays: 7 };
+    const s = id ? Store.service(id) : { color: '#e85002', icon: 'pen', baseDays: 7 };
     const icons = ['pen', 'code', 'film', 'present', 'share', 'box', 'layers', 'zap'];
     UI.modal({
       title: id ? 'Edit service' : 'Add service', size: 'md',
