@@ -18,7 +18,7 @@ Open `index.html` in any modern browser (Chrome, Edge or Firefox). Everything ru
 | Agency Staff           | carlo@flowdesk.test, bea@flowdesk.test, josh@flowdesk.test, lia@flowdesk.test          |
 | Client                 | client@brewhaus.test, sofia@northpeak.test, paolo@lumendental.test, nina@kasahome.test |
 
-Sign in by typing one of the emails above and the password. Once you are signed in, use **user menu → Switch demo account** to change roles, or **Reset demo data** to restore the original sample data.
+Sign in by typing one of the emails above and the password. To change roles, sign out and sign in with another account. Use **user menu → Reset demo data** to restore the original sample data.
 
 ## Features by role
 

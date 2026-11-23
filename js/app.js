@@ -49,7 +49,6 @@ const App = {
     if (!u) { if (err) { err.hidden = false; err.textContent = 'Invalid email or password.'; } return; }
     this.setUser(u);
   },
-  quickLogin(email) { const u = Store.all('users').find(x => x.email === email); if (u) this.setUser(u); },
   setUser(u) {
     this.user = u;
     try { sessionStorage.setItem('flowdesk_session', u.id); } catch (e) { }
@@ -153,7 +152,6 @@ const App = {
 
     document.getElementById('user-btn').innerHTML = `${UI.avatar(u, 32)}<span class="ub-text"><b>${UI.esc(u.name)}</b><small>${UI.esc(u.title)}</small></span>${UI.icon('chevronDown', 16)}`;
     document.getElementById('user-panel').innerHTML = `<div class="up-head">${UI.avatar(u, 40)}<div><b>${UI.esc(u.name)}</b><small>${UI.esc(u.email)}</small></div></div>
-      <button onclick="App.switchAccount()">${UI.icon('users', 16)} Switch demo account</button>
       <button onclick="App.resetDemo()">${UI.icon('refresh', 16)} Reset demo data</button>
       <button onclick="App.logout()" class="danger">${UI.icon('logout', 16)} Sign out</button>`;
   },
@@ -184,13 +182,6 @@ const App = {
       confirm: 'Reset data', danger: true,
       onConfirm: () => { Store.reset(); this.user = Store.user(this.user.id); if (!this.user) return this.logout(); this.render(); UI.toast('Demo data restored.'); },
     });
-  },
-
-  switchAccount() {
-    this.closePanels();
-    const groups = ['admin', 'staff', 'client'].map(role => `<div class="acct-group"><h5>${ROLE_LABEL[role]}</h5>${Store.where('users', u => u.role === role).map(u =>
-      `<button type="button" class="acct ${u.id === this.user.id ? 'current' : ''}" onclick="UI.closeModal();App.quickLogin('${UI.esc(u.email)}')">${UI.avatar(u, 34)}<span><b>${UI.esc(u.name)}</b><small>${UI.esc(u.title)}</small></span></button>`).join('')}</div>`).join('');
-    UI.modal({ title: 'Switch demo account', subtitle: 'Experience FlowDesk from each role\'s perspective.', body: `<div class="acct-grid">${groups}</div>`, hideFooter: true, size: 'lg' });
   },
 
   /* ---------- Global search (Ctrl+K) ---------- */
