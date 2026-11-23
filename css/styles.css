@@ -66,7 +66,7 @@
 * { box-sizing: border-box; }
 html, body { margin: 0; }
 body {
-  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
   background: var(--bg);
   color: var(--text);
   font-size: 14.5px;
@@ -76,7 +76,7 @@ body {
 }
 a { color: var(--primary); text-decoration: none; }
 a:hover { text-decoration: underline; }
-h1, h2, h3, h4, h5 { margin: 0; line-height: 1.25; letter-spacing: -.01em; }
+h1, h2, h3, h4, h5 { margin: 0; line-height: 1.25; letter-spacing: 0; }
 p { margin: 0; }
 small { font-size: 12.5px; }
 code, kbd { font-family: ui-monospace, 'Cascadia Code', Consolas, monospace; font-size: 12px; }
@@ -161,7 +161,7 @@ kbd { background: var(--surface-3); border: 1px solid var(--border); border-bott
   position: fixed; inset: 0 auto 0 0; width: var(--sidebar); background: var(--surface); border-right: 1px solid var(--border);
   display: flex; flex-direction: column; padding: 20px 14px; z-index: 40; transition: transform .25s;
 }
-.brand { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 19px; letter-spacing: -.02em; padding: 0 8px; }
+.brand { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 19px; letter-spacing: 0; padding: 0 8px; }
 .role-chip { display: flex; align-items: center; gap: 8px; margin: 18px 8px 14px; padding: 7px 12px; background: var(--surface-2); border: 1px solid var(--border); border-radius: 10px; font-size: 12.5px; font-weight: 600; color: var(--text-2); }
 .rc-dot { width: 8px; height: 8px; border-radius: 50%; }
 .r-admin { background: var(--violet); box-shadow: 0 0 0 3px color-mix(in srgb, var(--violet) 25%, transparent); }
@@ -265,7 +265,7 @@ kbd { background: var(--surface-3); border: 1px solid var(--border); border-bott
 .kpi-ic { width: 42px; height: 42px; border-radius: 12px; display: grid; place-items: center; color: var(--tone); background: color-mix(in srgb, var(--tone) 13%, transparent); flex-shrink: 0; }
 .kpi-body { display: flex; flex-direction: column; min-width: 0; }
 .kpi-label { font-size: 12.5px; color: var(--muted); font-weight: 600; }
-.kpi-val { font-size: 26px; font-weight: 800; letter-spacing: -.02em; line-height: 1.2; }
+.kpi-val { font-size: 26px; font-weight: 800; letter-spacing: 0; line-height: 1.2; }
 .kpi-val small { font-size: 13px; font-weight: 600; color: var(--muted); }
 .kpi-sub { font-size: 12px; color: var(--muted); }
 .tone-blue { --tone: var(--blue); } .tone-amber { --tone: var(--amber); } .tone-red { --tone: var(--red); } .tone-green { --tone: var(--green); }
@@ -693,7 +693,7 @@ input[type=range] { padding: 0; height: 24px; accent-color: var(--primary); bord
 .land-links { display: flex; align-items: center; gap: 24px; }
 .land-links a { color: var(--text-2); font-weight: 600; }
 .hero { display: grid; grid-template-columns: 1.15fr .85fr; gap: 56px; align-items: center; padding: 40px 0 70px; }
-.hero h1 { font-size: clamp(36px, 5vw, 56px); font-weight: 800; letter-spacing: -.035em; line-height: 1.06; margin: 18px 0; }
+.hero h1 { font-size: clamp(34px, 4.4vw, 50px); font-weight: 800; letter-spacing: -.01em; line-height: 1.12; margin: 18px 0; }
 .hero h1 em { font-style: normal; background: var(--grad-text); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .hero-copy > p { font-size: 17px; color: var(--text-2); max-width: 560px; }
 .hero-stats { display: flex; gap: 32px; margin-top: 32px; }
@@ -704,7 +704,7 @@ input[type=range] { padding: 0; height: 24px; accent-color: var(--primary); bord
 .login-card h2 { font-size: 22px; font-weight: 800; }
 .login-card > p { margin: 4px 0 18px; }
 .land-section { padding: 56px 0; text-align: center; }
-.land-section h2 { font-size: 32px; font-weight: 800; letter-spacing: -.02em; }
+.land-section h2 { font-size: 32px; font-weight: 800; letter-spacing: 0; }
 .section-sub { color: var(--muted); max-width: 640px; margin: 10px auto 0; font-size: 16px; }
 .flow { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 8px; margin-top: 34px; }
 .flow-step { display: flex; align-items: center; gap: 8px; padding: 10px 16px 10px 10px; background: var(--surface); border: 1px solid var(--border); border-radius: 99px; font-weight: 700; box-shadow: var(--shadow); animation: fadeUp .5s both; animation-delay: var(--d); }
