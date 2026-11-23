@@ -119,7 +119,7 @@ A real deployment would add a server and database, hashed passwords, server-side
 ## Credits
 
 - Icons are from [Feather](https://feathericons.com) by Cole Bemis, used under the [MIT License](https://github.com/feathericons/feather/blob/main/LICENSE) (Copyright (c) 2013-2023 Cole Bemis). A few icons were lightly modified.
-- Font: [Plus Jakarta Sans](https://fonts.google.com/specimen/Plus+Jakarta+Sans), loaded from Google Fonts.
+- Font: [Poppins](https://fonts.google.com/specimen/Poppins), loaded from Google Fonts.
 
 ## License
 
