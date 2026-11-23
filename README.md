@@ -19,6 +19,7 @@ Client Request → Review → Assignment → In Progress → Client Review → R
 - [How data is stored](#how-data-is-stored)
 - [Project structure](#project-structure)
 - [Scope and limitations](#scope-and-limitations)
+- [Credits](#credits)
 - [License](#license)
 
 ## Try it
@@ -115,6 +116,13 @@ FlowDesk is a working prototype for a class project, not a production system.
 
 A real deployment would add a server and database, hashed passwords, server-side permission checks and proper file storage.
 
+## Credits
+
+- Icons are from [Feather](https://feathericons.com) by Cole Bemis, used under the [MIT License](https://github.com/feathericons/feather/blob/main/LICENSE) (Copyright (c) 2013-2023 Cole Bemis). A few icons were lightly modified.
+- Font: [Plus Jakarta Sans](https://fonts.google.com/specimen/Plus+Jakarta+Sans), loaded from Google Fonts.
+
 ## License
 
 Copyright (c) 2026 rensiast. All rights reserved. You are welcome to view the code and try the demo, but it may not be copied, modified or redistributed without permission. See [LICENSE](LICENSE).
+
+The Feather icons in `js/ui.js` remain under their own MIT License, as listed in [Credits](#credits).
