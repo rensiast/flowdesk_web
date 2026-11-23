@@ -1,6 +1,3 @@
-# Local editor settings (machine-specific)
-.claude/settings.local.json
-
 # Windows
 Thumbs.db
 desktop.ini
@@ -15,6 +12,3 @@ desktop.ini
 # Logs / temp
 *.log
 *.tmp
-
-# Local editor settings
-.claude/
